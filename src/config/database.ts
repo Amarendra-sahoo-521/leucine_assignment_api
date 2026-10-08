@@ -4,11 +4,12 @@ import dotenv from "dotenv";
 import { Equipment } from "../entities/equipment.entity";
 import { Cleaning } from "../entities/cleaning.entity";
 import { Audit } from "../entities/audit.entity";
+import { Users } from "../entities/user";
 
 dotenv.config();
 
 const entities = [
-  Equipment, Cleaning, Audit
+  Equipment, Cleaning, Audit,Users
 ]
 
 export const AppDataSource = new DataSource({
